@@ -1,0 +1,34 @@
+.colleagueCard {
+    width: 300px;
+    margin-bottom: 16px;
+    border: 1px solid #949494;
+    padding: 10px 10px 24px 10px;
+}
+
+.descriptionWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 5px;
+}
+
+.socialLink:hover {
+    opacity: 0.8;
+}
+
+.socialsWrap {
+    display: flex;
+}
+
+.socialsWrap>a:not(:first-child) {
+    margin-left: 5px;
+}
+
+.nameWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameWrap>span:nth-child(2) {
+    margin-top: 5px;
+}
