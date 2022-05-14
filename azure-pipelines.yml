@@ -19,3 +19,8 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- uses: azure/app1337
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        allow-no-subscriptions: true
