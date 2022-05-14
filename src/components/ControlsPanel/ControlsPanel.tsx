@@ -11,13 +11,13 @@ const selectStyle: CSSProperties = {
   width: 200,
 };
 
-const handleChange = (e: string) => {
-  console.log(e);
-};
+// const handleChange = (e: string) => {
+//   console.log(e);
+// };
 
-const handleClear = () => {
-  console.log("clear");
-};
+// const handleClear = () => {
+//   console.log("clear");
+// };
 
 const ControlsPanel: FC = () => {
   return (
@@ -29,8 +29,8 @@ const ControlsPanel: FC = () => {
         allowClear
         size="large"
         placeholder="Select Office"
-        onChange={handleChange}
-        onClear={handleClear}
+        // onChange={handleChange}
+        // onClear={handleClear}
       >
         <Option value="lucy">Lucy</Option>
       </Select>
