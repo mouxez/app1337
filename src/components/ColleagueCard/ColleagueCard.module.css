@@ -1,7 +1,9 @@
+@import "../../globalStyles/variables.css";
+
 .colleagueCardTable {
     width: 300px;
     margin-bottom: 16px;
-    border: 1px solid #949494;
+    border: 1px solid var(--border-color);
     padding: 10px 10px 24px 10px;
 }
 
