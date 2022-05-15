@@ -1,13 +1,15 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import ColleaguesList from "./components/ColleaguesList/ColleaguesList";
-import Controls from "./components/ControlsPanel/ControlsPanel";
+import Header from "./components/Header/Header";
 import PageContainer from "./components/PageContainer/PageContainer";
 
 const App: FC = () => {
+  const [viewType, setViewType] = useState<"table" | "list">("table");
+
   return (
     <PageContainer>
-      <Controls />
-      <ColleaguesList />
+      <Header viewType={viewType} setViewType={setViewType} />
+      <ColleaguesList viewType={viewType} />
     </PageContainer>
   );
 };

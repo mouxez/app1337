@@ -1,8 +1,11 @@
-.container {
+.tableContainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 100px;
-    background-color: transparent;
+}
+
+.listContainer {
+    margin-top: 100px;
 }

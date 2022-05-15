@@ -1,16 +1,22 @@
 import { FC, useState, useEffect } from "react";
 import axios from "axios";
-import styles from "./ColleaguesList.module.css";
 import ColleagueCard from "../ColleagueCard/ColleagueCard";
 import ColleagueType from "../../sharedTypes/colleague";
 import Spin from "../Spin/Spin";
+import styles from "./ColleaguesList.module.css";
 
-const { container } = styles;
+const { tableContainer, listContainer } = styles;
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
-const ColleaguesList: FC = () => {
+type ColleaguesListProps = {
+  viewType: string;
+};
+
+const ColleaguesList: FC<ColleaguesListProps> = ({ viewType }) => {
   const [colleaguesList, setColleaguesList] = useState<Array<ColleagueType> | null>(null);
+
+  const containerClassName = viewType === "table" ? tableContainer : listContainer;
 
   useEffect(() => {
     axios
@@ -28,11 +34,15 @@ const ColleaguesList: FC = () => {
   }, []);
 
   return colleaguesList ? (
-    <div className={container}>
+    <div className={containerClassName}>
       {colleaguesList?.map((colleagueInfo: ColleagueType, index) => {
         const compositeKey = `${colleagueInfo?.email}-${index}`;
 
-        return colleagueInfo?.published && <ColleagueCard colleagueInfo={colleagueInfo} key={compositeKey} />;
+        return (
+          colleagueInfo?.published && (
+            <ColleagueCard colleagueInfo={colleagueInfo} viewType={viewType} key={compositeKey} />
+          )
+        );
       })}
     </div>
   ) : (
