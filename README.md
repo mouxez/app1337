@@ -11,5 +11,5 @@ To run the App:
 ### `npm i && npm start`
 Runs the app in the development mode.[http://localhost:3000](http://localhost:3000)
 
-Launches the test runner in the interactive watch mode.
 ### `npm test`
+Launches the test runner in the interactive watch mode.
