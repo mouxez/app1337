@@ -20,8 +20,11 @@ type ColleagueCardProps = {
 const ColleagueCard: FC<ColleagueCardProps> = memo(
   ({ colleagueInfo, viewType }) => {
     const isListView = viewType === "list";
+
+    // define classNames depend on view type
     const cardStyle = isListView ? colleagueCardList : colleagueCardTable;
     const avatar = isListView ? avatarListView : "";
+
     const socialsConfig = [
       {
         name: "linkedIn",
@@ -54,6 +57,7 @@ const ColleagueCard: FC<ColleagueCardProps> = memo(
             <span>Office: {colleagueInfo.office}</span>
           </div>
           <div className={socialsWrap}>
+            {/* return icon in case user has the link for that social */}
             {socialsConfig?.map(
               (item) =>
                 item.link && (

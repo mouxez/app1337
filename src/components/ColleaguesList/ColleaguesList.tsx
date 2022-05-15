@@ -38,6 +38,7 @@ const ColleaguesList: FC<ColleaguesListProps> = ({ viewType }) => {
       {colleaguesList?.map((colleagueInfo: ColleagueType, index) => {
         const compositeKey = `${colleagueInfo?.email}-${index}`;
 
+        // return the card in case user is published
         return (
           colleagueInfo?.published && (
             <ColleagueCard colleagueInfo={colleagueInfo} viewType={viewType} key={compositeKey} />
