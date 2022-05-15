@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Header renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container container"
+  >
+    <h1
+      class="title"
+    >
+      1337 fellows
+    </h1>
+    <div
+      class="controlsWrap"
+    >
+      <div
+        class="ant-radio-group ant-radio-group-outline"
+      >
+        <label
+          class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+        >
+          <span
+            class="ant-radio-button ant-radio-button-checked"
+          >
+            <input
+              checked=""
+              class="ant-radio-button-input"
+              type="radio"
+              value="table"
+            />
+            <span
+              class="ant-radio-button-inner"
+            />
+          </span>
+          <span>
+            Table
+          </span>
+        </label>
+        <label
+          class="ant-radio-button-wrapper"
+        >
+          <span
+            class="ant-radio-button"
+          >
+            <input
+              class="ant-radio-button-input"
+              type="radio"
+              value="list"
+            />
+            <span
+              class="ant-radio-button-inner"
+            />
+          </span>
+          <span>
+            List
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
