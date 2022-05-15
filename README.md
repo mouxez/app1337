@@ -1,30 +1,15 @@
+👋 Hi there,
+I'm happy to share with you my version of how the "Show 1337 FELLOWSHIP App" might look like.
+In case of any questions 💬 please feel free to reach me using telegram @mouxez or by email mouxez@gmail.com
+
 # Getting Started with the App
+This project was bootstrapped with Create React App TypeScript.
+Besides React and TypeScript, I decided to use Ant Design as a main UI library, Axios for requests and some tools for code styling (Eslint, Prettier, Husky).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
+To run the App:
+ in the project directory you have to create you own .env file and set the REACT_APP_API_KEY variable. 
 ### `npm i && npm start`
+Runs the app in the development mode.[http://localhost:3000](http://localhost:3000)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
+Launches the test runner in the interactive watch mode.
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

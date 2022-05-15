@@ -8,7 +8,7 @@ type CardProps = {
   className?: string;
 };
 
-const Card: FC<CardProps> = ({ children, className }) => {
+const Card: FC<CardProps> = ({ children, className = "" }) => {
   return <div className={`${container} ${className}`}>{children}</div>;
 };
 

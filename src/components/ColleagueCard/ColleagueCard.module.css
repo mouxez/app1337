@@ -1,15 +1,26 @@
-.colleagueCard {
+@import "../../globalStyles/variables.css";
+
+.colleagueCardTable {
     width: 300px;
     margin-bottom: 16px;
-    border: 1px solid #949494;
     padding: 10px 10px 24px 10px;
+    border: 1px solid var(--border-color);
+}
+
+.colleagueCardList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 5px;
 }
 
 .descriptionWrap {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-top: 5px;
+    align-items: flex-start;
+    margin-top: 10px;
+    flex-grow: 1;
 }
 
 .socialLink:hover {
@@ -27,8 +38,14 @@
 .nameWrap {
     display: flex;
     flex-direction: column;
+    line-height: 1;
 }
 
 .nameWrap>span:nth-child(2) {
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+.avatarListView {
+    width: 40px;
+    margin-right: 16px;
 }

@@ -1,19 +1,19 @@
 type ColleagueType = {
   email: string;
-  gitHub: string;
+  gitHub?: string;
   highlighted: boolean;
-  imagePortraitUrl: string;
-  imageWallOfLeetUrl: string;
-  linkedIn: string;
-  mainText: string;
-  manager: string;
+  imagePortraitUrl?: string;
+  imageWallOfLeetUrl?: string;
+  linkedIn?: string;
+  mainText?: string;
+  manager?: string;
   name: string;
-  office: string;
-  orgUnit: string;
-  phoneNumber: string;
+  office?: string;
+  orgUnit?: string;
+  phoneNumber?: string;
   published: boolean;
-  stackOverflow: string;
-  twitter: string;
+  stackOverflow?: string;
+  twitter?: string;
 };
 
 export default ColleagueType;
