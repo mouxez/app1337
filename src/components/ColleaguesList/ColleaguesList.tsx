@@ -5,7 +5,7 @@ import ColleagueType from "../../sharedTypes/colleague";
 import Spin from "../Spin/Spin";
 import styles from "./ColleaguesList.module.css";
 
-const { tableContainer, listContainer } = styles;
+const { tableContainer, container } = styles;
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -16,7 +16,7 @@ type ColleaguesListProps = {
 const ColleaguesList: FC<ColleaguesListProps> = ({ viewType }) => {
   const [colleaguesList, setColleaguesList] = useState<Array<ColleagueType> | null>(null);
 
-  const containerClassName = viewType === "table" ? tableContainer : listContainer;
+  const containerClassName = viewType === "table" ? `${container} ${tableContainer}` : container;
 
   useEffect(() => {
     axios

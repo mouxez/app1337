@@ -1,11 +1,15 @@
+.container {
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 130px;
+    }
+}
+
 .tableContainer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-.listContainer {
-    margin-top: 100px;
 }
