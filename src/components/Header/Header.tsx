@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({ viewType, setViewType }) => {
 
   return (
     <Card className={container}>
-      <h1 className={title}>1337 fellows</h1>
+      <h1 className={title}>1337 fellowship</h1>
       <div className={controlsWrap}>
         <Radio.Group value={viewType} onChange={handleChange}>
           <Radio.Button value="table">Table</Radio.Button>
