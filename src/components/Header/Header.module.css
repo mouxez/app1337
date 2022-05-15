@@ -1,0 +1,21 @@
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: calc(100% - 20px);
+
+}
+
+.title {
+    font-weight: 600;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.controlsWrap>button:nth-child(2) {
+    margin-left: 10px;
+}
