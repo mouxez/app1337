@@ -1,11 +1,26 @@
 import { FC, useState, useEffect } from "react";
 import axios from "axios";
+// import aws from "aws-sdk";
 import ColleagueCard from "../ColleagueCard/ColleagueCard";
 import ColleagueType from "../../sharedTypes/colleague";
 import Spin from "../Spin/Spin";
 import styles from "./ColleaguesList.module.css";
 
 const { tableContainer, container } = styles;
+
+// the reason why I commented this code is because of official issue with aws-sdk package (https://github.com/aws/aws-sdk-js/issues/3501)
+// to continue usage of aws-sdk I have to eject the CRA and add node-polyfill-webpack-plugin (https://www.npmjs.com/package/node-polyfill-webpack-plugin)
+// then I have to make some changes using this package in webpack.config.js
+// to be honest I think that it's a tricky way and may cose work instability of my assignment project
+
+// this is the code for the normal aws-sdk use case
+// const apiKeyProd = new aws.S3({
+//  secretAccessKey: process.env.REACT_APP_API_KEY,
+// });
+
+// const isDevEnv = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
+// const apiKeyDev = process.env.REACT_APP_API_KEY;
+// const apiKey = isDevEnv ? apiKeyDev : apiKeyProd;
 
 const apiKey = process.env.REACT_APP_API_KEY;
 

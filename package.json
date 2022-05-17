@@ -12,6 +12,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "antd": "^4.20.4",
+    "aws-sdk": "^2.1136.0",
     "axios": "^0.27.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -20,8 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "node --max_old_space_size=2560 node_modules/.bin/react-scripts start",
+    "build": "node --max_old_space_size=2560 node_modules/.bin/react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "eslint": "eslint src/**/*.ts src/**/*.tsx",
